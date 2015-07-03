@@ -99,17 +99,21 @@ header .nav-tabs.nav-justified li.active a {
 	z-index: 999;
 }
 
-.carousel-indicators {
+#carousel_home .item img {
+	width: 100%;
+}
+
+#carousel_home .carousel-indicators {
 	bottom: inherit !important;
 	top: 30px;
 }
 
-.carousel-indicators .active {
+#carousel_home .carousel-indicators .active {
 	width: 15px;
 	height: 15px;
 }
 
-.carousel-indicators li {
+#carousel_home .carousel-indicators li {
 	width: 15px;
 	height: 15px;
 	border: 2px solid #fff;
@@ -203,6 +207,12 @@ section.black {
 }
 
 .services_box .service a:hover {
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.services_box .service a:focus {
+	outline: 0;
 	text-decoration: none;
 	background-color: rgba(0,0,0,0.2);
 }
@@ -352,4 +362,143 @@ footer {
 	color: #fff;
 	border-top: 5px solid #FF4C00;
 	padding: 50px 0;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+section#welcome {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #4A4F55;
+	background-color: #EFEFEF;
+}
+
+section#welcome a {
+	color: #4A4F55;
+}
+
+.border_language {
+	border-right: 1px solid #686C71;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+
+.no_margin {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.service-active {
+	background-color: #343434;
+	padding: 100px 50px;
+	position: relative;
+	color: #fff;
+}
+
+.service-active button.close {
+	background-color: #FF5A20;
+	color: #fff;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 1;
+	font-weight: normal;
+	text-shadow: 0 0 0 transparent;
+	font-size: 40px;
+	line-height: 24px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.service-active button.close:hover,
+.service-active button.close:focus {
+	opacity: 0.7;
+	outline: 0;
+}
+
+.service-active .border-right {
+	border-right: 1px solid #fff;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+
+.service-active .active-icon {
+	padding: 50px;
+}
+
+.service-active .active-icon img {
+	width: 100%;
+}
+
+#notibyd .item a {
+	position: relative;
+	display: block;
+}
+
+#notibyd .item a .well {
+	position: relative;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+#notibyd .item a .well:hover .hover {
+	opacity: 1;
+}
+
+#notibyd .item a .well .hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 2;
+	opacity: 0;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+#notibyd .item a .well .hover img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	width: auto;
+	border: none;
+}
+
+#notibyd .item a:hover, 
+#notibyd .item a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+
+@media (min-width: 768px){
+	.modal-dialog {
+	  width: 1170px;
+	  margin: 30px auto;
+	}
 }
