@@ -195,6 +195,10 @@ section.black {
 	margin-bottom: 10px;
 }
 
+.services_box .service .icon img {
+	max-height: 100px;
+}
+
 .services_box .service a {
 	display: block;
 	color: #FF4C00;
@@ -494,9 +498,57 @@ img {
 	outline: 0;
 }
 
+.scroll_up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.scroll_up:hover {
+	opacity: 0.8;
+}
+
+.service-modal.well {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.service-modal.well img {
+	width: 100%;
+	border: 2px solid #343434;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-bottom: 20px;
+}
+
+.service-modal.well button.close {
+	background-color: #FF4C00;
+	color: #fff;
+	text-shadow: 0 0 0 transparent;
+	font-weight: normal;
+	opacity: 1;
+	font-size: 50px;
+	line-height: 30px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.service-modal.well button.close:hover {
+	opacity: 0.7;
+}
+
 @media (min-width: 768px){
 	.modal-dialog {
-	  width: 1170px;
-	  margin: 30px auto;
+		width: 1170px;
+		margin: 30px auto;
 	}
 }
